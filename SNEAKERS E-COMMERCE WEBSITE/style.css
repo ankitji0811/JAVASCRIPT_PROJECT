@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body , html{
+    height: 100%;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+}
+nav{
+    background-color: #111;
+    width: 100%;
+    color: white;
+    padding: 20px 50px;
+}
+.navTop{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.searchBar{
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    /* justify-content: ; */
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.searchInput{
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+}
+.searchInput::placeholder{
+    color: lightgray;
+}
+.searchIcon{
+    width: 20px;
+}
+.limitedOffer{
+    font-size: 20px;
+    border-bottom: 3px solid green;
+    cursor: pointer;
+}
+
+/* Bottom nav bar */
+
+.navBottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menuItem{
+    margin: 50px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 400;
+    color: lightgray;
+}
+
+/* Slider  */
+
+.slider{
+    background: url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=2070");
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%); */
+}
+
+.sliderWrapper{
+    display: flex;
+    width: 500vw;
+}
+.sliderItem{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.sliderBg{
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    background-color: #369e62;
+    position: absolute;
+}
+.sliderImg{
+    z-index: 1;
+}
+.sliderTitle{
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 900;
+    z-index: 1;
+}
+
+.sliderPrice{
+position: absolute;
+top: 10%;
+    left: 10%;
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    color: #369e62;
+    border: 1px solid gray;
+    z-index: 1;
+}
+
+.buyBtn{
+position: absolute;
+top: 50%;
+    right: 10%;
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    border: 1px solid gray;
+    background-color: black;
+    z-index: 1;
+    cursor: pointer;
+}
